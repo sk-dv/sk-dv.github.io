@@ -1,3 +1,11 @@
 .is-bold {
   font-weight: bold;
 }
+
+.has-margin-top-4em {
+  margin-top: 4em;
+}
+
+.container > p {
+  margin-bottom: 1em;
+}
