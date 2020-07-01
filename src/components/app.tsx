@@ -41,7 +41,7 @@ function App() {
             <div className="container">
                 <h1 className="title">sk dv.</h1>
                 <p>
-                    No me pregunten porqué me puse SkDv, simplemente me gusta. Como una tatuaje bonito que ves y te quieres hacer, no hay un motivo
+                    No me pregunten porqué me puse sk dv, simplemente me gusta. Como una tatuaje bonito que ves y te quieres hacer, no hay un motivo
                     oculto, mera trivialidad.
                 </p>
                 <p>
