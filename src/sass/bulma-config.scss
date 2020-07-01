@@ -1,0 +1,19 @@
+/** Import initial variable **/
+
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+
+/** Set the initial variable **/
+
+$flame: #CF5C36;
+$platinum: #EBEBEB;
+$indigo-dye: #083D77;
+$gold-crayola: #EFC88B;
+
+/** Set the derived variables **/
+
+$primary: $flame;
+
+/** Import the rest of Bulma **/
+
+@import "node_modules/bulma/bulma";
