@@ -1,0 +1,6 @@
+# web storm project files
+/.idea
+
+# packages
+/build
+/node_modules
