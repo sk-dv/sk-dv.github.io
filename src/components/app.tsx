@@ -14,6 +14,7 @@ function App() {
                         <a className="navbar-item" href="/">
                             <p className="is-bold">sk dv.</p>
                         </a>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                             <span aria-hidden="true"/>
                             <span aria-hidden="true"/>
@@ -26,7 +27,7 @@ function App() {
                             <a href="/blogs" className="navbar-item">Blog</a>
                         </div>
                         <div className="navbar-end">
-                            <a href="https://github.com/FelipeOsornio" target="_blank" className="navbar-item">
+                            <a href="https://github.com/FelipeOsornio" rel="noopener noreferrer" target="_blank" className="navbar-item">
                                 <span className="icon">
                                     <i className="fab fa-github"/>
                                 </span>
