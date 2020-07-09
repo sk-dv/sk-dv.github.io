@@ -9,10 +9,13 @@ $flame: #CF5C36;
 $platinum: #EBEBEB;
 $indigo-dye: #083D77;
 $gold-crayola: #EFC88B;
+$black-bg: rgb(36, 42, 54);
+$light-black-bg: rgb(46, 53, 67);
 
 /** Set the derived variables **/
 
-$primary: $flame;
+$primary: $black-bg;
+$grey: $light-black-bg;
 
 /** Import the rest of Bulma **/
 

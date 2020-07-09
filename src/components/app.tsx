@@ -1,6 +1,8 @@
 /** Tools */
 import React from "react"
-/** Styles */
+import {BrowserRouter, Route} from "react-router-dom"
+import Blog from "./blog"
+import Main from "./main"
 import "../sass/bulma-config.scss"
 
 function App() {
@@ -20,45 +22,23 @@ function App() {
                     </div>
                     <div className="navbar-menu" id="navMenu">
                         <div className="navbar-start">
-                            <a href="#" className="navbar-item">proyectos</a>
-                            <a href="#" className="navbar-item">blog</a>
+                            <a href="/" className="navbar-item">Proyectos</a>
+                            <a href="/blogs" className="navbar-item">Blog</a>
                         </div>
                         <div className="navbar-end">
-                            <a href="https://www.linkedin.com/in/felipeosornio/" target="_blank" className="navbar-item">
-                                <span className="icon">
-                                    <i className="fa fa-linkedin"/>
-                                </span>
-                            </a>
                             <a href="https://github.com/FelipeOsornio" target="_blank" className="navbar-item">
                                 <span className="icon">
-                                    <i className="fa fa-github"/>
+                                    <i className="fab fa-github"/>
                                 </span>
                             </a>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div className="container">
-                <h1 className="title">sk dv.</h1>
-                <p>
-                    No me pregunten porqué me puse sk dv, simplemente me gusta. Como una tatuaje bonito que ves y te quieres hacer, no hay un motivo
-                    oculto, mera trivialidad.
-                </p>
-                <p>
-                    Me gustan los pinos. Siempre que pienso en uno recuerdo lo fresco y tétrico que se siente estar en un bosque, sin embargo la
-                    sensación
-                    me parece agradable.
-                </p>
-                <p>
-                    Decidí desarrollar esta página porque quería combinar las habilidades que he ido adquiriendo a lo largo de mi vida; es corta, aún
-                    así
-                    considero que de alguna manera puedo aportar algo interesante al mundo.
-                </p>
-                <p>
-                    Me gustaría presentarme como Deiv, mi nombre no me gusta, por lo tanto no lo diré. Soy estudiante de Ingeniería en Sistema
-                    Computacionales, dentro de un par de meses terminaré la carrera.
-                </p>
-            </div>
+            <BrowserRouter>
+                <Route path="/" component={Main}/>
+                <Route path="/blogs" component={Blog} />
+            </BrowserRouter>
         </>
     )
 }
