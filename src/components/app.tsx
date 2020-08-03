@@ -38,8 +38,31 @@ function App() {
             </nav>
             <BrowserRouter>
                 <Route path="/" component={Main}/>
-                <Route path="/blogs" component={Blog} />
+                <Route path="/blogs" component={Blog}/>
             </BrowserRouter>
+            <footer className="footer is-pinned-bottom">
+                <div className="content has-text-centered">
+                    <div className="is-inline">
+                        <ul className="list-tools-formated">
+                            <li>
+                                Desarrollado por Felipe Osornio (sk dv).
+                            </li>
+                            <li>
+                                Marco CSS por <a href="https://bulma.io" className="is-tool" title="Bulma" target="_blank"
+                                                 rel="noopener noreferrer">Bulma</a>.
+                            </li>
+                            <li>
+                                Iconos por&nbsp;
+                                <a className="is-tool" href="https://www.flaticon.es/autores/freepik" title="Freepik" rel="noopener noreferrer"
+                                   target="_blank">Freepik</a> de&nbsp;
+                                <a className="is-tool" href="https://www.flaticon.es/" title="Flaticon" target="_blank" rel="noopener noreferrer">
+                                    Flaticon
+                                </a>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </>
     )
 }

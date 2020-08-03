@@ -1,0 +1,61 @@
+$platinum: #EBEBEB;
+$white: $platinum;
+
+/** <---- Landing Page ----> **/
+
+%formatted-div {
+  margin: 2em 0;
+  padding: 3em;
+  border-radius: 20px;
+}
+
+%dark-is-tool {
+  text-decoration: underline dashed;
+  color: $white;
+}
+
+%list-style-triangle {
+  list-style-image: url("../images/white.png");
+}
+
+%dark-is-tool:hover {
+  color: white;
+  opacity: 0.5;
+}
+
+.main-div {
+  @extend %formatted-div;
+}
+
+.main-list {
+  li {
+    padding: 0.3em !important;
+  }
+}
+
+.is-pinned-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.list-tools-formated {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none !important;
+  margin: 0 !important;
+
+  li {
+    margin: 0 !important;
+    padding: 0 0.5em;
+  }
+}
+
+.is-tool {
+  @extend %dark-is-tool
+}
+
+
+

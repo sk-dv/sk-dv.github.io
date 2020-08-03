@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import './css/app.css'
 import './css/index.css'
 import './sass/bulma-config.scss'
+import './sass/app.scss'
 import App from './components/app'
 import * as serviceWorker from './utils/serviceWorker'
 
@@ -11,7 +12,7 @@ ReactDOM.render(
         <App/>
     </React.StrictMode>,
     document.getElementById('root')
-);
+)
 
 /**
  * If you want your app to work offline and load faster, you can change
